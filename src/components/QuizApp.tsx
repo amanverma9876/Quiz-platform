@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import QuizForm from './QuizForm';
 import Quiz from './Quiz';
 import QuizResult from './QuizResult';
+import QuizCreator from './QuizCreator';
+import QuizTaker from './QuizTaker';
 
 const QuizApp: React.FC = () => {
   const [quizzes, setQuizzes] = useState<any[]>(() => {
@@ -57,6 +59,7 @@ const QuizApp: React.FC = () => {
         />
       )}
     </div>
+    
   );
 };
 
